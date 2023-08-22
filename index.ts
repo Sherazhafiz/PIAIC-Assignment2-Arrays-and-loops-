@@ -111,3 +111,11 @@ function Converter(temperature: number[], Fahrenheit: number[]) {
 Converter(temperature,Fahrenheit);
 console.log("With Fahrenheit temperature : ",Fahrenheit);
 
+//  4- Write a program that uses a while loop to print the first 100 even numbers.
+var num1:number=1
+while (num1<=200) {
+    if(num1%2==0)
+    console.log(num1," ");
+    num1++;
+}
+
