@@ -111,11 +111,40 @@ function Converter(temperature: number[], Fahrenheit: number[]) {
 Converter(temperature,Fahrenheit);
 console.log("With Fahrenheit temperature : ",Fahrenheit);
 
-//  4- Write a program that uses a while loop to print the first 100 even numbers.
+//  9- Write a program that uses a while loop to print the first 100 even numbers.
 var num1:number=1
 while (num1<=200) {
     if(num1%2==0)
     console.log(num1," ");
     num1++;
 }
+// Develop a program that calculates and prints the sum of the first n even numbers using a for loop.
 
+let Enum=340;
+function SUM(num:number) {
+    let i=0,sum=0;
+    while(i<num){
+        if(num%2==0){
+            sum=sum+i;
+        }
+        i++;
+    }
+    return sum;
+}
+console.log("sum of all numbers : ",SUM(Enum));
+
+//Implement a program that uses a for loop to iterate through an array of numbers and print only the even numbers.
+
+let arr4=[2,4,3,6,3,5,2,9,1];
+console.log("with completer values : ",arr1);
+console.log("with even values values : ");
+
+function Check(arr1:number[]) {
+    for(let i=0;i<arr1.length;i++){
+        if(arr1[i]%2==0){
+           console.log(arr1[i]);
+            
+        }
+    }
+}
+Check(arr4);
