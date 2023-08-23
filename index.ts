@@ -142,9 +142,23 @@ console.log("with even values values : ");
 function Check(arr1:number[]) {
     for(let i=0;i<arr1.length;i++){
         if(arr1[i]%2==0){
-           console.log(arr1[i]);
-            
+           console.log(arr1[i]);   
         }
     }
 }
 Check(arr4);
+
+//- Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers from them and just leave the odd ones
+
+let arr5=[2,4,3,6,3,5,2,9,1];
+console.log("with negative values : ",arr5);
+
+function Check1(arr1:number[]) {
+    for(let i=0;i<arr1.length;i++){
+        if(arr1[i]%2==0){
+            arr1.splice(i,1);
+        }
+    }
+}
+Check1(arr5);
+console.log("without negative values : ",arr5);
