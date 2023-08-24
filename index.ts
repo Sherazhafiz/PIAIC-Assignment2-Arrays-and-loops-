@@ -162,3 +162,18 @@ function Check1(arr1:number[]) {
 }
 Check1(arr5);
 console.log("without negative values : ",arr5);
+
+//  Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
+
+let arr6=[67,48,71,62,49,53,26,94,68];
+console.log("with all grades : ",arr1);
+
+function heck(arr1:number[]) {
+    for(let i=0;i<arr1.length;i++){
+        if(arr1[i]<50){
+            arr1.splice(i,1);
+        }
+    }
+}
+heck(arr6);
+console.log("without fail students values : ",arr6);
