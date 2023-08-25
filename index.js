@@ -155,3 +155,17 @@ function heck(arr1) {
 }
 heck(arr6);
 console.log("without fail students values : ", arr6);
+//  Write a program that uses a function to find the largest element in an array of numbers.
+let arr7 = [67, 48, 71, 62, 49, 53, 26, 94, 68];
+console.log("values of array :", arr7);
+function large(arr1) {
+    let num = arr1[0];
+    for (let i = 1; i < arr1.length; i++) {
+        if (num < arr1[i]) {
+            num = arr1[i];
+        }
+    }
+    return num;
+}
+let largest = large(arr7);
+console.log("largest number of array is : ", largest);
